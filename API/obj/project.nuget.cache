@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VY602ABZziY=",
+  "dgSpecHash": "tV2Y8P/pW98=",
   "success": true,
-  "projectFilePath": "C:\\Users\\taype\\OneDrive\\Documents\\Github\\SnowboardEShop\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\taype\\OneDrive\\Documents\\Github\\SnowboardEShop\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taype\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taype\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.7\\microsoft.aspnetcore.openapi.8.0.7.nupkg.sha512",

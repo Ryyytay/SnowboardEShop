@@ -9,6 +9,7 @@ interface StoreContextValue {
 
 export const StoreContext = createContext<StoreContextValue | undefined>(undefined);
 
+// eslint-disable-next-line 
 export function useStoreContext() {
     const context = useContext(StoreContext);
 
