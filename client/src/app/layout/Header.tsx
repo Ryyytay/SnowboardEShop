@@ -2,7 +2,6 @@ import { AppBar, Badge, Box, IconButton, List, ListItem, Toolbar, Typography } f
 import CustomizedSwitches from "./Switch";
 import { Link, NavLink } from "react-router-dom";
 import { SatelliteAlt, ShoppingCart } from "@mui/icons-material";
-import { useStoreContext } from "../context/StoreContext";
 import { useAppSelector } from "../store/configureStore";
 
 const midLinks = [
