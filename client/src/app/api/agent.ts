@@ -1,6 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { toast } from "react-toastify";
 import { router } from "../router/Routes";
+import { fetchFilters } from "../../features/catalog/catalogSlice";
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 500));
 
@@ -50,6 +51,7 @@ const requests = {
 const Catalog = {
     list: () => requests.get('products'),
     details: (id: number) => requests.get(`products/${id}`),
+    fetchFilters: () => requests.get('products/filters')
 } 
 
 const TestErrors = {
@@ -64,7 +66,7 @@ const Basket = {
     get: () => requests.get('basket'),
     addItem: (productId: number, quantity = 1) => requests.post(`basket?productId=${productId}&quantity=${quantity}`, {}),
     removeItem: (productId: number, quantity = 1) => requests.delete(`basket?productId=${productId}&quantity=${quantity}`),
-}
+} 
 
 const agent = {
     Catalog,
