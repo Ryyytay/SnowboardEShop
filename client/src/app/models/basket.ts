@@ -1,6 +1,6 @@
 export interface Basket {
     id: number
-    buyerID: string
+    buyerId: string
     items: BasketItem[]
   }
   
