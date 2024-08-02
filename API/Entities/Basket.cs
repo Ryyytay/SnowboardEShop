@@ -9,7 +9,7 @@ namespace API.Entities
     {
         public int Id { get; set; }
 
-        public string BuyerID { get; set; }
+        public string BuyerId { get; set; }
 
         public List<BasketItem> Items { get; set; } = new();
 
