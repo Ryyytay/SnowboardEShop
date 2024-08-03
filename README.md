@@ -14,15 +14,24 @@ Welcome to the Snowboard E-Shop, a sophisticated full-stack web application. Thi
 
 ### Basic Features
 
-- **Responsive Design**: Optimized for various devices, ensuring a seamless shopping experience.
+- **Responsive Design**: Optimized for desktop devices to accommodate detailed configurations and high-resolution images that enhance the browsing and shopping experience.
 - **CRUD Functionality**: Full create, read, update, and delete capabilities for products within the store.
 - **Dynamic Routing**: Implemented with React Router to manage navigation across different components.
+- **Role-Based Authorization**: Implements ASP.NET Identity for secure user authentication and role-based access, ensuring that different users experience appropriate interactions and access rights.
 
 ### Advanced Features
 
 - **Theme Switching**: Dark and light mode preferences to improve user experience and accessibility.
 - **State Management**: Utilizing Redux for efficient state management across the application.
 - **Containerization**: Application containerization with Docker to ensure consistency across development, testing, and production environments.
+- **Automapper**: Utilizes Automapper to simplify the mapping of data models to DTOs, enhancing the efficiency of data manipulation.
+- **React Hook Form**: Incorporates React Hook Form to manage form state in the React components, providing a seamless and performant user form experience.
+- **Paging, Sorting, Searching, and Filtering**: Advanced functionalities that improve data retrieval efficiency and user experience by allowing users to easily navigate large datasets and find products they are interested in.
+
+### Desktop Optimization Justification
+
+- **Target Audience and Usage**: Tailored for professional snowboarders and enthusiasts who prefer using desktops for detailed reviews and purchases. Desktop optimization allows for enhanced feature display and user interaction that are integral to our product offerings.
+- **Analytics Driven**: User behavior analysis shows predominant desktop usage, guiding our focus to enhance the desktop user experience before expanding to mobile platforms.
 
 ## Highlight Feature
 
