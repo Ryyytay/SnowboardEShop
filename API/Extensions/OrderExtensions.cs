@@ -1,16 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API.DTOs;
 using API.Entities.OrderAggregate;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Extensions
+namespace API.Extensions;
+
+public static class OrderExtensions
 {
-    public static class OrderExtensions
-    {
-        public static IQueryable<OrderDto> ProjectOrderToOrderDto(this IQueryable<Order> query)
+    public static IQueryable<OrderDto> ProjectOrderToOrderDto(this IQueryable<Order> query)
         {
             return query
                 .Select(order => new OrderDto
@@ -33,5 +29,4 @@ namespace API.Extensions
                     }).ToList()
                 }).AsNoTracking();
         }
-    }
 }

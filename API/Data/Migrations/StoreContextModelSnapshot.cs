@@ -52,7 +52,7 @@ namespace API.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItem");
                 });
 
             modelBuilder.Entity("API.Entities.OrderAggregate.Order", b =>

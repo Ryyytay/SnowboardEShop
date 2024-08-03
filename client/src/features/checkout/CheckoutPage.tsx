@@ -35,7 +35,7 @@ export default function CheckoutPage() {
     const currentValidationSchema = validationSchema[activeStep];
 
     const methods = useForm({
-        mode: 'all',
+        mode: 'onTouched',
         resolver: yupResolver(currentValidationSchema)
     });
 
