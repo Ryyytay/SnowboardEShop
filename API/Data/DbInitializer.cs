@@ -1,36 +1,36 @@
 using API.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace API.Data
+namespace API.Data;
+
+public static class DbInitializer
 {
-    public static class DbInitializer
+    public static async Task Initialize(StoreContext context, UserManager<User> userManager)
     {
-        public static async Task Initialize(StoreContext context, UserManager<User> userManager)
+        if (!userManager.Users.Any())
         {
-            if (!userManager.Users.Any())
+            var user = new User
             {
-                var users = new User
-                {
-                    UserName = "bob",
-                    Email = "bob@test.com"
-                };
+                UserName = "bob",
+                Email = "bob@test.com"
+            };
 
-                await userManager.CreateAsync(users, "Pa$$w0rd");
-                await userManager.AddToRoleAsync(users, "Member");
+            await userManager.CreateAsync(user, "Pa$$w0rd");
+            await userManager.AddToRoleAsync(user, "Member");
 
-                var admin = new User
-                {
-                    UserName = "admin",
-                    Email = "admin@test.com"
-                };
+            var admin = new User
+            {
+                UserName = "admin",
+                Email = "admin@test.com"
+            };
 
-                await userManager.CreateAsync(admin, "Pa$$w0rd");
-                await userManager.AddToRolesAsync(admin, new[] {"Member", "Admin"});
-            }
+            await userManager.CreateAsync(admin, "Pa$$w0rd");
+            await userManager.AddToRolesAsync(admin, new[] { "Admin", "Member" });
+        }
 
-            if (context.Products.Any()) return;
+        if (context.Products.Any()) return;
 
-            var products = new List<Product> 
+        var products = new List<Product>
             {
                 new Product
                 {
@@ -192,7 +192,7 @@ namespace API.Data
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 18999,
                     PictureUrl = "/images/products/boot-core2.png",
-                    Brand = "NetCore",
+                    Brand = "Redis",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -230,12 +230,11 @@ namespace API.Data
                 },
             };
 
-            foreach (var product in products)
-            {
-                context.Products.Add(product);
-            }
-
-            context.SaveChanges();
+        foreach (var product in products)
+        {
+            context.Products.Add(product);
         }
+
+        context.SaveChanges();
     }
 }

@@ -6,13 +6,14 @@ interface Props extends UseControllerProps {
 }
 
 export default function AppTextInput(props: Props) {
-    const { fieldState, field } = useController({ ...props, defaultValue: '' });
+    const {fieldState, field} = useController({...props, defaultValue: ''})
+
     return (
-        <TextField
+        <TextField 
             {...props}
             {...field}
             fullWidth
-            variant='outlined'
+            variant="outlined"
             error={!!fieldState.error}
             helperText={fieldState.error?.message}
         />
