@@ -31,7 +31,6 @@ Welcome to the Snowboard E-Shop, a sophisticated full-stack web application. Thi
 ### Desktop Optimization Justification
 
 - **Target Audience and Usage**: Tailored for professional snowboarders and enthusiasts who prefer using desktops for detailed reviews and purchases. Desktop optimization allows for enhanced feature display and user interaction that are integral to our product offerings.
-- **Analytics Driven**: User behavior analysis shows predominant desktop usage, guiding our focus to enhance the desktop user experience before expanding to mobile platforms.
 
 ## Highlight Feature
 
