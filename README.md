@@ -8,7 +8,7 @@ Welcome to the Snowboard E-Shop, a sophisticated full-stack web application. Thi
 
 - **Frontend**: React with TypeScript, styled using MUI
 - **Backend**: C# with .NET 8, leveraging Entity Framework Core
-- **Database**: Setup with either SQL databases
+- **Database**: Setup with SQL databases
 
 ## Key Features
 
