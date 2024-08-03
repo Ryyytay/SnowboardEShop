@@ -43,8 +43,6 @@ To set up and run the project locally, follow these steps:
 
 Install dependencies:
 
-bash
-Copy code
 # Frontend dependencies
 cd frontend
 npm install
@@ -54,8 +52,6 @@ cd ../backend
 dotnet restore
 Run the application:
 
-bash
-Copy code
 # Start the frontend
 npm start
 
