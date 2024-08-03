@@ -7,11 +7,11 @@ import useProducts from '../../app/hooks/useProducts';
 import AppSelectList from '../../app/components/AppSelectList';
 import AppDropzone from '../../app/components/AppDropzone';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { validationSchema } from './productValidation';
 import { useAppDispatch } from '../../app/store/configureStore';
 import agent from '../../app/api/agent';
 import { setProduct } from '../catalog/catalogSlice';
 import { LoadingButton } from '@mui/lab';
+import { validationSchema } from './productValidation';
 
 interface Props {
     product?: Product;
