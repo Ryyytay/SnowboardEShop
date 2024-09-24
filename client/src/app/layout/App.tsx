@@ -14,6 +14,7 @@ import { useAppDispatch } from "../store/configureStore";
 import { fetchBasketAsync } from "../../features/basket/basketSlice";
 import { fetchCurrentUser } from "../../features/account/accountSlice";
 import HomePage from "../../features/home/HomePage";
+import Footer from "./Footer";
 
 function App() {
   const location = useLocation();
@@ -34,12 +35,23 @@ function App() {
   }, [initApp]);
 
   const [darkMode, setDarkMode] = useState(false);
-  const paletteType = darkMode ? "dark" : "light";
+
   const theme = createTheme({
     palette: {
-      mode: paletteType,
+      mode: darkMode ? "dark" : "light",
+      primary: {
+        main: darkMode ? '#577ec1' : '#3e65a8', 
+      },
+      secondary: {
+        main: darkMode ? '#8db0e8' : '#173a72', 
+      },
       background: {
-        default: paletteType === "light" ? "#eaeaea" : "#121212",
+        default: darkMode ? '#05070a' : '#f5f7fa', 
+        paper: darkMode ? '#2c2f33' : '#eaeef3',
+      },
+      text: {
+        primary: darkMode ? '#eeeff1' : '#0e0f11',
+        secondary: darkMode ? '#eeeff1': '#0e0f11',
       },
     },
   });
@@ -67,6 +79,7 @@ function App() {
             <Outlet />
           </Container>
         )}
+          <Footer />
       </ThemeProvider>
     </>
   );

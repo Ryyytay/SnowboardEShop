@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+T+BTHNqU9M=",
+  "dgSpecHash": "iTTtnwgptUg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\taype\\OneDrive\\Documents\\Github\\SnowboardEShop\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taype\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\taype\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

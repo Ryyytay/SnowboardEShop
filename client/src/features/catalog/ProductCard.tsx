@@ -36,7 +36,7 @@ export default function ProductCard({ product }: Props) {
                 <Typography gutterBottom color='secondary' variant="h5" component="div">
                     {currencyFormat(product.price)}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.primary">
                     {product.brand} / {product.type}
                 </Typography>
             </CardContent>
