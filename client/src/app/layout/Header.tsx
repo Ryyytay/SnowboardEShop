@@ -24,7 +24,7 @@ const navStyles = {
         color: 'grey.500'
     },
     '&.active': {
-        color: 'text.secondary'
+        color: 'text.primary'
     }
 }
 
