@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v+dgvbS7TJ/8iDUwJt9N1B2U6z4wapl/IIFW+X65Q88=",
+  "Hash": "LbhHTbrBDhE6kO5zYLTqNRx2Lw0QGWI7LQvXs/RdM78=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\index-B1RJw5qv.js"
     },
     {
+      "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\index-C_42TMZ5.js",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "assets/index-C_42TMZ5.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-C_42TMZ5.js"
+    },
+    {
       "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\index-DAOWPHuQ.css",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\index-DAOWPHuQ.css"
+    },
+    {
+      "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\index-Pk2bnPpi.css",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "assets/index-Pk2bnPpi.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-Pk2bnPpi.css"
     },
     {
       "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\roboto-cyrillic-300-normal-D6mjswgs.woff2",
@@ -1440,6 +1478,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\sb-ts1.png"
+    },
+    {
+      "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\images\\snowboarder.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/snowboarder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\snowboarder.png"
     },
     {
       "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\index.html",

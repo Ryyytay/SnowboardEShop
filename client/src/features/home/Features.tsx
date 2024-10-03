@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Card, Typography, Grid } from '@mui/material';
 import { AccessTime, AttachMoney, Snowboarding, RotateRight } from '@mui/icons-material';
 

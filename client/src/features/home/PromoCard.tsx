@@ -1,4 +1,4 @@
-import { Card, CardContent, Button, Typography, Box } from '@mui/material';
+import { Card, Button, Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function PromoCard() {

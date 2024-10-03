@@ -1,8 +1,13 @@
 import Slider from "react-slick";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ProductCard from "../catalog/ProductCard";
+import { Product } from "../../app/models/product";
 
-function ProductCarousel({ products }) {
+interface Props {
+  products: Product[];
+}
+
+function ProductCarousel({products}: Props) {
   const settings = {
     dots: true,
     infinite: true,
