@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import ProductCarousel from './ProductCarousel';
 import useProducts from "../../app/hooks/useProducts";
 import PromoCard from "./PromoCard";
@@ -6,7 +6,7 @@ import Banner from "./Banner";
 import FeatureSection from "./Features";
 
 export default function HomePage() {
-  const { products, productsLoaded } = useProducts();
+  const { products } = useProducts();
 
   const contentPadding = 5;
 
