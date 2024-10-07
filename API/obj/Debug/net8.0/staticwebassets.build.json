@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LbhHTbrBDhE6kO5zYLTqNRx2Lw0QGWI7LQvXs/RdM78=",
+  "Hash": "AzhZ+jNc4dlju6ju6au+fz6/Xyj3My+vU7ie4nZx6D4=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\index-B1RJw5qv.js"
+    },
+    {
+      "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\index-BXdbDa6H.js",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "assets/index-BXdbDa6H.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\index-BXdbDa6H.js"
     },
     {
       "Identity": "C:\\Users\\taype\\Documents\\Github\\SnowboardEShop\\api\\wwwroot\\assets\\index-C_42TMZ5.js",
