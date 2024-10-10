@@ -47,7 +47,7 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<StoreContext>(opt => 
 {
-    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") + ";TrustServerCertificate=true");
 });
 builder.Services.AddCors();
 builder.Services.AddIdentityCore<User>(opt => 
