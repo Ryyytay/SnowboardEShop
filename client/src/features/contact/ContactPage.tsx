@@ -1,22 +1,74 @@
-import { Button, ButtonGroup, Typography } from '@mui/material';
-import { useDispatch } from 'react-redux';
-import { useAppSelector } from '../../app/store/configureStore';
-import { decrement, increment } from './counterSlice';
+import { Container, Typography, TextField, Button, Box } from '@mui/material';
+import { useState } from 'react';
 
 export default function ContactPage() {
-    const dispatch = useDispatch();
-    const {data, title} = useAppSelector(state => state.counter);
-    
-    return (
-        <>
-            <Typography gutterBottom variant='h3'>{title}</Typography>
-            <Typography variant='h4'>The data is: {data}</Typography>
-            <ButtonGroup>
-                <Button onClick={() => dispatch(decrement(1))} variant='contained' color='error'>Decrement</Button>
-                <Button onClick={() => dispatch(increment(1))} variant='contained' color='primary'>Increment</Button>
-                <Button onClick={() => dispatch(increment(5))} variant='contained' color='secondary'>Increment by 5</Button>
-            </ButtonGroup>
-        </>
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
-    )
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Form data submitted:", formData);
+        // Integration with backend to process the form data goes here
+    };
+
+    return (
+        <Container maxWidth="sm">
+            <Typography variant="h3" gutterBottom align="center">
+                Contact Us
+            </Typography>
+            <Typography paragraph>
+                Got a question or feedback? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </Typography>
+            <form onSubmit={handleSubmit}>
+                <TextField
+                    fullWidth
+                    label="Your Name"
+                    name="name"
+                    variant="outlined"
+                    margin="normal"
+                    required
+                    value={formData.name}
+                    onChange={handleInputChange}
+                />
+                <TextField
+                    fullWidth
+                    label="Your Email"
+                    name="email"
+                    type="email"
+                    variant="outlined"
+                    margin="normal"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                />
+                <TextField
+                    fullWidth
+                    label="Your Message"
+                    name="message"
+                    variant="outlined"
+                    margin="normal"
+                    multiline
+                    rows={4}
+                    required
+                    value={formData.message}
+                    onChange={handleInputChange}
+                />
+                <Box textAlign="center" mt={2}>
+                    <Button type="submit" variant="contained" color="primary">
+                        Send Message
+                    </Button>
+                </Box>
+            </form>
+        </Container>
+    );
 }
